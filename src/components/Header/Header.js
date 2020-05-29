@@ -7,9 +7,9 @@ class Header extends Component{
 
     render() {
         return (
-            <div>
-                Header
-            </div>
+            <header>
+                Shelfie
+            </header>
         )
     }
 }

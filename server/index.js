@@ -18,8 +18,8 @@ massive({
     console.log('db connected')
 })
 
-// app.get()
-// app.post()
+app.get('/api/inventory', ctrl.getInventory)
+app.post('/api/product', ctrl.newProduct)
 // app.put()
 // app.delete()
 

@@ -5,10 +5,11 @@ class Product extends Component{
         super();
     }
 
-    render() {
+    render(props) {
+        const {name, price, imgUrl} = this.props
         return (
             <div>
-                Product
+                {name} {price} <img className='product-image' src={imgUrl} />
             </div>
         )
     }

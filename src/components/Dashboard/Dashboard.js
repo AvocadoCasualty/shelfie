@@ -7,9 +7,14 @@ class Dashboard extends Component{
     }
 
     render() {
+
         return (
             <div>
-                Dashboard
+                {this.props.inventory.map(e=>{return (
+                    <Product
+                        name={e.name} price={e.price} imgUrl={e.imgUrl}
+                    />
+                )})}
                 <Product/>
             </div>
         )
